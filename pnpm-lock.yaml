@@ -60,7 +60,7 @@ importers:
       '@actions/github':
         specifier: ^6.0.1
         version: 6.0.1
-      '@critiq/review-core':
+      '@critiq-dev/review-core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -76,7 +76,7 @@ importers:
 
   packages/mcp-server:
     dependencies:
-      '@critiq/review-core':
+      '@critiq-dev/review-core':
         specifier: workspace:*
         version: link:../core
       '@modelcontextprotocol/sdk':
@@ -95,7 +95,7 @@ importers:
 
   packages/vscode-extension:
     dependencies:
-      '@critiq/review-core':
+      '@critiq-dev/review-core':
         specifier: workspace:*
         version: link:../core
     devDependencies:

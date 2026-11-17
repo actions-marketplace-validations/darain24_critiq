@@ -1,5 +1,5 @@
 {
-  "name": "@critiq/ai-code-review-action",
+  "name": "@critiq-dev/ai-code-review-action",
   "version": "1.0.2",
   "description": "Node 24 GitHub Action for AI pull request review",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1",
-    "@critiq/review-core": "workspace:*"
+    "@critiq-dev/review-core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",

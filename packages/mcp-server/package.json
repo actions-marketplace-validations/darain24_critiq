@@ -1,5 +1,5 @@
 {
-  "name": "@critiq/review-mcp-server",
+  "name": "@critiq-dev/review-mcp-server",
   "version": "1.0.2",
   "description": "Local stdio MCP server for AI code review",
   "type": "module",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.4",
-    "@critiq/review-core": "workspace:*",
+    "@critiq-dev/review-core": "workspace:*",
     "zod": "^4.1.5"
   },
   "devDependencies": {

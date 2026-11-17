@@ -22,7 +22,7 @@ A production-oriented TypeScript monorepo with one review engine and three ways 
               └────────────┘  └──────────┘  └────────────┘
 ```
 
-All review behavior lives in `@critiq/review-core`. Clients supply diffs, credentials, presentation, and platform-specific I/O; they do not duplicate parsing, prompting, provider fallback, JSON repair, config, or cache logic.
+All review behavior lives in `@critiq-dev/review-core`. Clients supply diffs, credentials, presentation, and platform-specific I/O; they do not duplicate parsing, prompting, provider fallback, JSON repair, config, or cache logic.
 
 ## Requirements and installation
 
@@ -53,7 +53,7 @@ When multiple keys exist, core tries Groq, Cerebras, then Gemini. It advances on
 ## Core engine
 
 ```ts
-import { reviewDiff } from '@critiq/review-core';
+import { reviewDiff } from '@critiq-dev/review-core';
 
 const findings = await reviewDiff(unifiedDiff, {
   categories: ['bug', 'security'],
@@ -85,7 +85,7 @@ The implementation is in `packages/github-action`, while the Marketplace-facing 
 Rebuild the distributable after source changes:
 
 ```bash
-corepack pnpm --filter @critiq/ai-code-review-action build
+corepack pnpm --filter @critiq-dev/ai-code-review-action build
 git add -f packages/github-action/dist/index.js
 ```
 
@@ -94,7 +94,7 @@ git add -f packages/github-action/dist/index.js
 Run the local stdio server with a provider key in its environment:
 
 ```bash
-GROQ_API_KEY=your-key npx -y @critiq/review-mcp-server
+GROQ_API_KEY=your-key npx -y @critiq-dev/review-mcp-server
 ```
 
 It exposes exactly one tool, `review_code`, taking a unified diff plus optional language and categories. Ready-to-paste Claude and generic MCP configurations are in `packages/mcp-server/README.md`.

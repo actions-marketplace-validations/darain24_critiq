@@ -1,9 +1,9 @@
-# @critiq/review-core
+# @critiq-dev/review-core
 
 Shared TypeScript engine for parsing unified diffs and reviewing their added lines with Groq, Cerebras, or Gemini. It has no hosted service or database.
 
 ```ts
-import { reviewDiff } from '@critiq/review-core';
+import { reviewDiff } from '@critiq-dev/review-core';
 
 const comments = await reviewDiff(diff, { categories: ['bug', 'security'] });
 ```

@@ -6,7 +6,7 @@ import {
   reviewDiff,
   type ReviewCategory,
   type ReviewComment,
-} from '@critiq/review-core';
+} from '@critiq-dev/review-core';
 import * as vscode from 'vscode';
 
 const secretNames = {

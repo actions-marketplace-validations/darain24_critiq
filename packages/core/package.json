@@ -1,5 +1,5 @@
 {
-  "name": "@critiq/review-core",
+  "name": "@critiq-dev/review-core",
   "version": "1.0.2",
   "description": "Provider-agnostic AI code review engine for unified diffs",
   "type": "module",
